@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consigliatore di Film 🎬</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Non so che film guardare 🍿</h1>
+
+  <div class="box">
+    <label for="genere">Genere</label>
+    <select id="genere">
+      <option value="azione">Azione</option>
+      <option value="commedia">Commedia</option>
+      <option value="drammatico">Drammatico</option>
+      <option value="fantascienza">Fantascienza</option>
+      <option value="romantico">Romantico</option>
+      <option value="thriller">Thriller</option>
+      <option value="horror">Horror</option>
+      <option value="animazione">Animazione</option>
+      <option value="fantasy">Fantasy</option>
+    </select>
+
+    <label for="mood">Mood</label>
+    <select id="mood">
+      <option value="felice">Felice</option>
+      <option value="triste">Triste</option>
+      <option value="adrenalinico">Adrenalinico</option>
+      <option value="rilassato">Rilassato</option>
+    </select>
+
+    <button onclick="consigliaFilm()">Consigliami un film</button>
+  </div>
+
+  <div id="risultato"></div>
+
+  <script src="/src/main.js"></script>
+</body>
+</html>

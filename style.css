@@ -1,0 +1,133 @@
+/* RESET BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TITOLO */
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+/* CARD CENTRALE */
+.box {
+  background: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 25px 30px;
+  width: 340px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+
+/* LABEL */
+.box label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* SELECT */
+.box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: none;
+  background: #2b2b2b;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.box select:hover {
+  background: #333;
+}
+
+/* BOTTONE */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e50914, #b20710);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(229, 9, 20, 0.4);
+}
+
+/* RISULTATO */
+#risultato {
+  margin-top: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 14px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#risultato h2 {
+  margin-bottom: 10px;
+  color: #e50914;
+}
+
+#risultato p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 400px) {
+  .box,
+  #risultato {
+    width: 90%;
+  }
+}
+
+button.inner {
+  width: 48%;
+  margin: 5px 1%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #e50914, #b20710);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button.inner:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(229, 9, 20, 0.4);
+}
+
+button.inner:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
